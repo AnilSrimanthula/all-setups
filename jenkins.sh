@@ -13,3 +13,6 @@ yum install jenkins -y
 #STEP-4: RESTARTING JENKINS (when we download service it will on stopped state)
 systemctl start jenkins.service
 systemctl status jenkins.service
+yum install docker -y
+systemctl start docker
+chmod 777 /var/run/docker.sock
